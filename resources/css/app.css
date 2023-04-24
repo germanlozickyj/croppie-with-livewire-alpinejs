@@ -1,0 +1,48 @@
+@import url('/node_modules/croppie/croppie.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-button-croppie {
+    position: relative;
+    z-index: 1000;
+}
+
+.container-button-croppie button {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.button-login {
+    background: #f3f3f3 !important;
+    border: none;
+    width: auto;
+    padding: 0rem 1rem;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 1rem 1.5rem 1rem 0rem;
+    font-family: var(--font-one);
+    box-shadow: 2px 2px 10px 2px rgb(11, 36, 96);
+    height: 50px;
+    color: rgb(46, 45, 45);
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+}
+
+.container-croppie {
+    display: flex;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 1000;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
